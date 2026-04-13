@@ -117,44 +117,6 @@ Visit `http://localhost:8000`
 - `POST /api/payments/create-subscription/` - Start subscription
 - `POST /api/webhooks/razorpay/` - Razorpay payment webhook
 
-## Development Timeline
-
-### Week 1: Core Backend (Apr 10-16)
-- [x] Project structure setup
-- [ ] Database models
-- [ ] Sarvam AI integration
-- [ ] Celery tasks
-- [ ] Webhook receiver
-
-### Week 2: API Layer (Apr 17-23)
-- [ ] REST API endpoints
-- [ ] File upload handling
-- [ ] S3/R2 integration
-- [ ] API testing
-
-### Week 3: Frontend + Auth (Apr 24-30)
-- [ ] Django templates
-- [ ] HTMX interactions
-- [ ] User authentication
-- [ ] Dashboard UI
-
-### Week 4: Payments + Launch (May 1-7)
-- [ ] Razorpay integration
-- [ ] Email notifications
-- [ ] Production deployment
-- [ ] Beta launch
-
-## Environment Variables
-
-See `.env.example` for all required environment variables.
-
-Key variables:
-- `SARVAM_API_KEY` - Get from dashboard.sarvam.ai
-- `DATABASE_URL` - PostgreSQL connection string
-- `REDIS_URL` - Redis connection string
-- `RAZORPAY_KEY_ID` / `RAZORPAY_KEY_SECRET` - Payment credentials
-- `AWS_*` - S3/R2 configuration for file storage
-
 ## Testing
 
 ```bash
@@ -167,19 +129,6 @@ pytest --cov=.
 # Run specific app tests
 pytest transcripts/tests.py
 ```
-
-## Deployment
-
-### Railway (Recommended)
-
-1. Install Railway CLI: `npm install -g @railway/cli`
-2. Login: `railway login`
-3. Create project: `railway init`
-4. Add services: PostgreSQL, Redis
-5. Deploy: `git push`
-
-### Environment Variables on Railway
-Set all variables from `.env.example` in Railway dashboard.
 
 ## Contributing
 
