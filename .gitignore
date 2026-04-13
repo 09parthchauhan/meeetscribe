@@ -67,5 +67,5 @@ yarn-error.log
 *.backup
 
 # md files
-example.md
-TIMELINE.md
+.example.md
+.TIMELINE.md
