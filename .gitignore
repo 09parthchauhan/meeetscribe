@@ -65,3 +65,7 @@ yarn-error.log
 # Backup files
 *.bak
 *.backup
+
+# md files
+example.md
+TIMELINE.md
